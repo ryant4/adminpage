@@ -9,6 +9,9 @@
 .sidebar {
     grid-area: sidebar;
     background-color: #497174;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content max-content;
 }
 
 .header {
