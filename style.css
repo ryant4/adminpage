@@ -1,0 +1,22 @@
+.page-container {
+    display: grid;
+    grid-template-columns: clamp(250px, 25%, 350px) 5fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: "sidebar header"
+    "sidebar main-content";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #497174;
+}
+
+.header {
+    grid-area: header;
+    background-color: #EFF5F5;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: #D6E4E5;
+}
