@@ -4,7 +4,7 @@
 .page-container {
     display: grid;
     grid-template-columns: clamp(250px, 25%, 300px) 5fr;
-    grid-template-rows: 150px 1fr;
+    grid-template-rows: 160px 1fr;
     grid-template-areas: "sidebar header"
     "sidebar main-content";
 }
@@ -15,7 +15,7 @@
     grid-area: header;
     background-color: #EFF5F5;
     display: grid;
-    grid-template-rows: 50px 50px;
+    grid-template-rows: 75px 75px;
 }
 
 .search-header {
@@ -51,7 +51,7 @@
     border: none;
 }
 .user-logos img {
-    height: 45px;
+    height: 40px;
     margin: 5px 15px 5px 15px;
 
 }
@@ -74,10 +74,64 @@
     margin-left: 15px;
 }
 
+.user-menu {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.user-menu img{
+    width: 70px;
+    margin-left: 20px;
+}
+
+.user-greeting {
+    display: grid;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 35px 35px;
+    grid-template-areas: "image hi" 
+    "image user";
+}
+
+.large-profile-image {
+    grid-area: image;
+
+}
+
+.hi-there {
+    grid-area: hi;
+    font-size: .9rem;
+    align-self: end;
+    margin-bottom: 4px;
+}
+
+.user-data {
+    grid-area: user;
+    font-size: 1.3rem;
+}
 
 
+.header-buttons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    place-items: center;
+}
 
+.header-buttons button {
+    background-color: #497174;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px 8px 20px;
+    border: none;
+}
 
+.header-buttons>:last-child {
+    margin-right: 40px;
+
+}
 
 
 /* SIDEBAR STYLES */
