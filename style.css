@@ -3,45 +3,121 @@
 }
 .page-container {
     display: grid;
-    grid-template-columns: clamp(250px, 25%, 350px) 5fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-columns: clamp(250px, 25%, 300px) 5fr;
+    grid-template-rows: 150px 1fr;
     grid-template-areas: "sidebar header"
     "sidebar main-content";
 }
+
+/* HEADER STYLES */
+
+.header {
+    grid-area: header;
+    background-color: #EFF5F5;
+    display: grid;
+    grid-template-rows: 50px 50px;
+}
+
+.search-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 75px 75px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: min-content min(600px, 75%);
+    align-items: center;
+    justify-content: left;
+}
+
+.user-logos {
+    display: grid;
+    grid-template-columns: auto auto max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar img {
+    height: 25px;
+    padding-top: 4px;
+    margin-left: 20px;
+}
+.search-bar button {
+    background-color: #EFF5F5;
+    border: none;
+}
+.user-logos img {
+    height: 45px;
+    margin: 5px 15px 5px 15px;
+
+}
+
+#alert-icon {
+    height: 25px;
+}
+
+.header input {
+    height: 1.4rem;
+    border-width: 1px;
+    border-radius: 10px;
+    padding-left: .5rem;
+}
+
+.header h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+/* SIDEBAR STYLES */
 
 .sidebar {
     grid-area: sidebar;
     background-color: #497174;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content max-content max-content;
     color: white;
+    row-gap: 15px;
 }
 
 li>img {
     margin-right: .8rem;
-    width: 1rem;
+    width: 1.2 rem;
 }
-
 
 h2>img {
     margin-right: .8rem;
 }
-.sidebar li {
+
+.sidebar li,
+.sidebar h2 {
     margin: 1.5rem;
     font-size: 1.2rem;
-
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar h2 {
-    margin: 1.5rem;
     font-size: 1.5rem;
 }
 
-.header {
-    grid-area: header;
-    background-color: #EFF5F5;
-}
+
+
+/* MAIN CONTENT STYLES */
 
 .main-content {
     grid-area: main-content;
