@@ -142,8 +142,8 @@
     background-color: #497174;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 100px 330px 175px;
     color: white;
-    row-gap: 15px;
 }
 
 li>img {
@@ -177,4 +177,43 @@ h2>img {
 .main-content {
     grid-area: main-content;
     background-color: #D6E4E5;
+    grid-template-columns: 3fr 1fr;
+    display: grid;
+}
+
+.task-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.task-card {
+    background-color: white;
+    width: auto;
+    height: 225px;
+
+}
+
+.social-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-left: 0px;
+}
+
+.announcements {
+    background-color: white;
+    width: 200px;
+    height: 300px;
+}
+
+.trending {
+    background-color: white;
+    width: 200px;
+    height: 300px;
 }
