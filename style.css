@@ -72,7 +72,6 @@
     font-size: 1.1rem;
     margin-right: 40px;
     margin-left: 12px;
-    justify-self: start;
 }
 
 .user-menu {
@@ -186,7 +185,9 @@ h2>img {
 
 .main-content h3 {
     padding-top: 25px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    font-weight: 500;
 }
 
 #projects-title {
@@ -198,6 +199,7 @@ h2>img {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
+    padding-top: 15px;
     grid-auto-rows: max-content;
 }
 
@@ -215,10 +217,10 @@ h2>img {
 .social-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 300px;
-    gap: 20px;
+    grid-template-rows: 300px 55px 300px;
     padding: 20px;
     padding-left: 0px;
+    padding-top: 15px;
 }
 
 
