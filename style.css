@@ -218,7 +218,7 @@ h2>img {
 .social-container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 55px 300px;
+    grid-template-rows: 325px 55px 325px;
     padding: 20px;
     padding-left: 0px;
     padding-top: 15px;
@@ -228,9 +228,9 @@ h2>img {
 .trending,
 .announcements {
     background-color: white;
-    width: 225px;
-    height: 300px;
-    padding: 10px;
+    width: 250px;
+    height: 325px;
+    padding: 20px;
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(102, 102, 102);
@@ -244,6 +244,7 @@ h2>img {
 .main-content p {
     font-size: 1rem;
     font-weight: 400;
+    color: rgb(82, 82, 82);
 }
 
 .card-footer img {
@@ -256,4 +257,42 @@ h2>img {
     display: grid;
     grid-auto-flow: column;
     justify-content: end;
+}
+
+.announcements {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.announcements p {
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgb(82, 82, 82);
+}
+
+.announcements h5 {
+    font-size: .9rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.trending {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.trending-profile {
+    display: grid;
+    grid-template-columns: 50px 175px;
+    grid-template-rows: 60px;
+    grid-auto-flow: row;
+
+}
+.trending img {
+    width: 40px;
+    align-self: center;
+}
+
+.trending p {
+    align-self: center;
 }
