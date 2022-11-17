@@ -208,10 +208,11 @@ h2>img {
     width: auto;
     height: 225px;
     border-radius: 20px;
-    padding-top: 10px;
-    padding-left: 20px;
+    padding: 28px;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px rgb(102, 102, 102);
+    display: grid;
+    grid-template-rows: 2rem 1fr 30px;
 }
 
 .social-container {
@@ -234,4 +235,25 @@ h2>img {
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(102, 102, 102);
 
+}
+
+.main-content h4 {
+    font-size: 1.2rem;
+}
+
+.main-content p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-footer img {
+    width: 20px;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+
+.card-footer {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
 }
